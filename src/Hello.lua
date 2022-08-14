@@ -1,9 +1,9 @@
 local function Get(Dude)
-    if not Dude then
-        return 
-    end
+	if not Dude then
+		return
+	end
 
-    print("Hello World")
+	print("Hello World")
 end
 
 return Get
