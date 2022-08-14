@@ -3,31 +3,34 @@ name: CI
 on:
   push:
     branches:
-    - main
+      - main
   pull_request:
     branches:
-    - main
+      - main
 
 jobs:
   lint:
     name: Lint
     runs-on: macos-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: setup-aftman
-      uses: ok-nick/setup-aftman@v0.1.0
-    - name: Lint
-      run: |
-        selene ./src
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install tools
+        uses: ok-nick/setup-aftman@v0.0.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          rust-check: false
+          version: "v0.2.5"
+      - name: Lint
+        run: |
+          selene ./src
 
   style:
     name: Styling
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: JohnnyMorganz/stylua-action@1.0.0
-      with :
-        token: ${{ secrets.GITHUB_TOKEN}}
-        args: --check
-
+      - uses: actions/checkout@v3
+      - uses: JohnnyMorganz/stylua-action@1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN}}
+          args: --check
