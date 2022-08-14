@@ -19,7 +19,6 @@ jobs:
         uses: ok-nick/setup-aftman@v0.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          trust-check: false
           version: "v0.2.5"
       - name: Lint
         run: |
