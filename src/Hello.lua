@@ -3,7 +3,7 @@ local function Get(Dude)
 		return
 	end
 
-	print("Hello World")
+	print("Hello")
 end
 
 return Get
