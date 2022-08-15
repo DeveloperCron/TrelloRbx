@@ -7,7 +7,7 @@ local testRoot = script.Parent.planning
 
 local function verifyPlan(plan, expected, notSkip)
 	local nodes = plan:findNodes(function(node)
-		return (not notSkip) or (node.modifier ~= TestEnum.NodeModifier.Skip)
+		return not notSkip or (node.modifier ~= TestEnum.NodeModifier.Skip)
 	end)
 
 	local nodeNames = {}
@@ -61,7 +61,7 @@ return {
 			"planning d test4",
 			"planning d test4 test5",
 			"planning d test4 test6",
-			"planning d test4",  -- Order doesn't actually matter for this test.
+			"planning d test4", -- Order doesn't actually matter for this test.
 			"planning d test4 test5",
 			"planning d test4 test7",
 		}))
@@ -80,7 +80,7 @@ return {
 			"planning d test4",
 			"planning d test4 test5",
 			"planning d test4 test6",
-			"planning d test4",  -- Order doesn't actually matter for this test.
+			"planning d test4", -- Order doesn't actually matter for this test.
 			"planning d test4 test5",
 			"planning d test4 test7",
 		}, true))

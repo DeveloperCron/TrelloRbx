@@ -1,13 +1,13 @@
 -- Config.lua
 -- @author: Dev_Cron
 export type TrelloConfig = {
-    Token: string;
-    Key: string;
+	Token: string,
+	Key: string,
 }
 
-local config : TrelloConfig = {
-    Token = "",
-    Key = "",
+local config: TrelloConfig = {
+	Token = "",
+	Key = "",
 }
 
 return config
