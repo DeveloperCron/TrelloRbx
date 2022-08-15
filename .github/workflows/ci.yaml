@@ -20,6 +20,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: "v0.2.5"
+          trust-check: --no-trust-check
       - name: Lint
         run: |
           selene ./src
