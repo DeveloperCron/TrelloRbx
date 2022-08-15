@@ -1,9 +1,15 @@
 [package]
 name = "lior/trelloservice"
+description = "TrelloRbx, a service to connect trello to roblox."
 version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+license = "MIT"
 
 [dependencies]
 promise = "evaera/promise@4.0.0"
 janitor = "howmanysmall/janitor@1.14.1"
+
+exclude = {
+    "README.md", "gitignore", "changelog.md", "aftman.toml", "selene.toml", "stylua.toml"
+}
