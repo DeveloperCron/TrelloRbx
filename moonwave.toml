@@ -1,4 +1,5 @@
 gitRepoUrl = "https://github.com/DeveloperCron/TrelloRbx"
+gitSourceBranch = "main"
 
 [home]
 enabled = true
