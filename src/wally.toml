@@ -7,7 +7,7 @@ realm = "shared"
 license = "MIT"
 
 [dependencies]
-promise = "evaera/promise@4.0.0"
+promise = "evaera/promise@^4"
 janitor = "howmanysmall/janitor@1.14.1"
 
 exclude = {
