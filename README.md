@@ -1,6 +1,6 @@
 # TrelloRbx Service
 
-```text 
+```text
 TrelloRbx is a module that allows you to interact with Trello, send and get information
 ```
 
