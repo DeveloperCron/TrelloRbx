@@ -1,10 +1,10 @@
+---
+sidebar_position: 1
+---
+
 # TrelloRbx Service
 
-[![CI](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/ci.yaml)
-
-
-
-```text 
+```text
 TrelloRbx is a module that allows you to interact with Trello, send and get information
 ```
 
