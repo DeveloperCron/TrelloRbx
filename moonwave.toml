@@ -1,0 +1,8 @@
+gitRepoUrl = "https://github.com/DeveloperCron/TrelloRbx"
+
+[home]
+enabled = true
+includeReadme = false
+
+[docusaurus]
+tagline = "Trello To Roblox module"
