@@ -19,7 +19,7 @@ jobs:
         uses: ok-nick/setup-aftman@v0.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          version: "v0.2.5"
+          version: "v0.2.6"
           trust-check: false
       - name: Lint
         run: |
@@ -27,7 +27,7 @@ jobs:
 
   style:
     name: Styling
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       - uses: JohnnyMorganz/stylua-action@1.0.0
