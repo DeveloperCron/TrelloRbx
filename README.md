@@ -1,24 +1,40 @@
-# TrelloRbx Service
+<div align="center">
+  <h1>TrelloRbx</h1>
+  <p>
+    <a href="https://github.com/DeveloperCron/TrelloRbx/actions/workflows/ci.yaml">
+      <img src="https://github.com/DeveloperCron/TrelloRbx/actions/workflows/ci.yaml/badge.svg" alt="Documentation status" />
+    </a>
+    <a href="http://developercron.github.io/TrelloRbx/">
+      <img src="https://github.com/DeveloperCron/TrelloRbx/actions/workflows/pages/pages-build-deployment/badge.svg" alt="Build and release status"/>
+    </a>
+  </p>
+  <p>Service with server-client functions for a easy communication between Trello and Roblox</p>
+  <a href="http://developercron.github.io/TrelloRbx/">View docs →</a>
+</div>
 
-[![CI](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/ci.yaml)
+## Motivation
 
-[![pages-build-deployment](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/pages/pages-build-deployment)
+There are many ways to use Trello and Roblox, but the most common is to use the Trello API is pcall(), TrelloRbx uses Promise to resolve/reject the calls being from the API. This service is a wrapper for the Trello API, so you can use it to create a server-client communication between Trello and Roblox.
 
-```text
-TrelloRbx is a module that allows you to interact with Trello, send and get information
+---
+
+### Usage
+
+```lua
+type Data : string | number
+
+local TrelloRbx = require(script.Parent.TrelloRbx)
+local data = TrelloRbx(Token: string, key: string) -- Might be changed
+local Board = data:GetBoard(Board: Data)
+local List = Board:GetList(List: Data)
+
+local Card = List:GetCard(data: any?)
+    :andThen(function(Value)
+    -- Do something with the card
+    end)
+    :catch(--[[ Do something with the error ]])
 ```
 
-Currently under development but here some information why to use it:
+<b> The service is still under development and will be changed a lot </b>
 
-## Why Should I use it over the simple way?
-
-- TrelloRbx uses Promise in the methods. If the process has failed the promise will reject it and immediately warn you the exact reason it failed.
-
-- No yielding, TrelloRbx designed simply not to yield your code.
-
-- And last, TrelloService has a good way to avoid spam, etcetera.
-
-- Contribution
-If you wan’t to contribute to this project just get in contact with @DeveloperCron
-
-Available under MIT LICENSE
+Available under MIT license
