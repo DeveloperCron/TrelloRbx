@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/ci.yaml)
 
+[![pages-build-deployment](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/DeveloperCron/TrelloRbx/actions/workflows/pages/pages-build-deployment)
+
 ```text
 TrelloRbx is a module that allows you to interact with Trello, send and get information
 ```
