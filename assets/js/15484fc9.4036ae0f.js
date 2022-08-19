@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[823],{10645:e=>{e.exports=JSON.parse('{"functions":[],"properties":[],"types":[],"name":"Config","desc":"Contains all the configuration for the TrelloService.","source":{"line":9,"path":"src/Config.lua"}}')}}]);
