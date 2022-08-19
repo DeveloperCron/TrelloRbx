@@ -18,6 +18,4 @@ There are many ways to use Trello and Roblox, but the most common is to use the 
 
 ---
 
-<b> The service is still under development and will be changed a lot </b>
-
 Available under MIT license
