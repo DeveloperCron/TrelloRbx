@@ -18,23 +18,6 @@ There are many ways to use Trello and Roblox, but the most common is to use the 
 
 ---
 
-### Usage
-
-```lua
-type Data : string | number
-
-local TrelloRbx = require(script.Parent.TrelloRbx)
-local data = TrelloRbx(Token: string, key: string) -- Might be changed
-local Board = data:GetBoard(Board: Data)
-local List = Board:GetList(List: Data)
-
-local Card = List:GetCard(data: any?)
-    :andThen(function(Value)
-    -- Do something with the card
-    end)
-    :catch(--[[ Do something with the error ]])
-```
-
 <b> The service is still under development and will be changed a lot </b>
 
 Available under MIT license

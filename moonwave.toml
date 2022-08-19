@@ -7,3 +7,17 @@ includeReadme = false
 
 [docusaurus]
 tagline = "Trello To Roblox module"
+
+
+[[home.features]]
+title = "Usage"
+description = "Easy way to retrieve data from Trello and convert it to Roblox, and then export it to a whatever you want"
+
+[[home.features]]
+title = "Utilities"
+description = "TrelloRbx produces a bunch of utilities that you the TrelloService, can use to help you with your projects"
+
+[[home.features]]
+title = "Documentation"
+description = "TrelloRbx has a documentation page that you can read to get started"
+
