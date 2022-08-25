@@ -1,9 +1,20 @@
 {
-	"name": "Packages",
+	"name": "TrelloRbx",
 	"tree": {
-		"$path": "src/Packages",
-		"Knit": {
-			"$path": "src"
+		"$className": "DataModel",
+
+		"ServerScriptService" : {
+			"$className": "ServerScriptService",
+			"Scripts" : {
+				"$path": "src"
+			}
+		},
+
+		"ReplicatedStorage" : {
+			"$className": "ReplicatedStorage",
+			"Packages" : {
+				"$path": "Packages"
+			}
 		}
 	}
 }

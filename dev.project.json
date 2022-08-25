@@ -1,13 +1,6 @@
-
 {
 	"name": "TrelloRbx",
 	"tree": {
-		"$className": "DataModel",
-		"ReplicatedStorage": {
-			"$className": "ReplicatedStorage",
-			"Packages": {
-				"$path": "default.project.json"
-			}
-		}
+		"$path": "src"
 	}
 }
